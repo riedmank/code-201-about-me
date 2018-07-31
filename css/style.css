@@ -1,4 +1,23 @@
 h1 {
+    text-align: right;
+    color: darkgreen;
+    border-color: ivory;
+    border: 5px dotted ivory;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+h3 {
     text-align: center;
-    color: magenta;
+    color: darkgreen;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+body {
+    background-color:skyblue;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+p {
+    text-align: center;
+    color: darkgreen;
 }
