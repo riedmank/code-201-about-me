@@ -1,9 +1,10 @@
 h1 {
-    text-align: right;
-    color: darkgreen;
+    text-align: center;
+    color: ivory;
     border-color: ivory;
-    border: 5px dotted ivory;
+    border: 5px dashed ivory;
     font-family: 'Arial Black', Gadget, sans-serif;
+    border-radius: 10px;
 }
 
 h3 {
@@ -13,8 +14,15 @@ h3 {
 }
 
 body {
-    background-color:skyblue;
+    background-color:darkblue;
     font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+article {
+    background-color: skyblue;
+    width: 525px;
+    margin-left: 30%;
+    border-radius: 10px;
 }
 
 p {
