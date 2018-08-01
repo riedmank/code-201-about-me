@@ -1,13 +1,20 @@
 h1 {
+    padding: 10px;
     text-align: center;
     color: ivory;
     border: 5px dashed wheat;
     border-radius: 10px;
+    font-size: 30pt;
 }
 
 h3 {
+    padding-bottom: 25px;
     text-align: center;
     color: darkgreen;
+}
+
+h3 span {
+    font-size: 10pt;
 }
 
 body {
@@ -16,6 +23,8 @@ body {
 }
 
 article {
+    margin: 10px;
+    padding: 20px;
     background-color: skyblue;
     width: 50%;
     min-width: 400px;
@@ -24,14 +33,18 @@ article {
     border-radius: 10px;
 }
 
+ol {
+    color: skyblue;
+}
+
+ol:hover {
+    color: darkgreen;
+}
+
 ul {
     color: darkgreen;
     list-style-type: none;
-    padding: 20px;
-}
-
-ol {
-    color: darkgreen;
+    border-bottom: 20px;
 }
 
 p {

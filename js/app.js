@@ -1,10 +1,8 @@
 'use strict';
 
 var myElement = document.getElementById('myButton');
-var myElement1 = document.getElementById('myFacts');
 
 myElement.addEventListener('click', function() {
-  myElement1.style.display='none';
 
   //instance variables
   var check = false;
@@ -126,5 +124,4 @@ myElement.addEventListener('click', function() {
     alert('You got them all correct! Congratulations!');
     break;
   }
-  myElement1.style.display='block';
 });
