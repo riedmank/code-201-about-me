@@ -1,9 +1,9 @@
 'use strict';
 
+//setup for event listener
 var myElement = document.getElementById('myButton');
 
 myElement.addEventListener('click', function() {
-
   //instance variables
   var check = false;
   var response = [];
@@ -15,7 +15,6 @@ myElement.addEventListener('click', function() {
   var correctAnswer = 0;
 
   //about me quiz
-
   for (var i = 0; i < 5; i++) {
     while (check === false) {
       userAnswer = prompt('Answer for question ' + (i + 1) + '?').toLowerCase();
@@ -38,7 +37,7 @@ myElement.addEventListener('click', function() {
     check = false;
   }
 
-  //adding up correct answers
+  //adding up correct answers from about me quiz
   for (var m = 0; m < 5; m++) {
     if (response[m] === answer[m]) {
       correctAnswer++;
@@ -97,7 +96,7 @@ myElement.addEventListener('click', function() {
     alert('You failed to guess a State where I visited.');
   }
 
-  //switch for correct answers
+  //switch statement for correct answers
   switch (correctAnswer) {
   case 0:
     alert('You didn\'t get any correct! Time to study');
