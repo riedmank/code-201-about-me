@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     color: ivory;
-    border: 5px dashed ivory;
+    border: 5px dashed wheat;
     border-radius: 10px;
 }
 
@@ -22,6 +22,16 @@ article {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+}
+
+ul {
+    color: darkgreen;
+    list-style-type: none;
+    padding: 20px;
+}
+
+ol {
+    color: darkgreen;
 }
 
 p {
