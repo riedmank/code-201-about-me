@@ -1,11 +1,11 @@
 'use strict';
 
 var myElement = document.getElementById('myButton');
-// var myElement1 = document.getElementById('facts');
+var myElement1 = document.getElementById('myFacts');
 
 myElement.addEventListener('click', function() {
-  // myElement1.style.background-color='darkgreen';
-  
+  myElement1.style.display='none';
+
   //instance variables
   var check = false;
   var response = [];
@@ -13,10 +13,11 @@ myElement.addEventListener('click', function() {
   var userAnswer;
   var guess;
   var secretNumber = Math.floor(Math.random() * 10) + 1;
-  var places = ['washington', 'north Dakota', 'california', 'florida'];
+  var places = ['washington', 'north dakota', 'california', 'florida'];
   var correctAnswer = 0;
-  
+
   //about me quiz
+
   for (var i = 0; i < 5; i++) {
     while (check === false) {
       userAnswer = prompt('Answer for question ' + (i + 1) + '?').toLowerCase();
@@ -46,20 +47,23 @@ myElement.addEventListener('click', function() {
     }
   }
 
-  //guessing game
+  //number guessing game
   alert('Try to guess my favorite number between 1 and 10 in 4 guesses or less!');
   for (var j = 4; j > 0; j--) {
     console.log(secretNumber);
     guess = prompt('What is your guess? ' + j + ' guesses remaining.');
-    guess = parseInt(guess); 
+    guess = parseInt(guess);
     if (isNaN(guess) || guess < 1 || guess > 10) {
       alert('You didn\'t enter a correct value. Try again.');
       j++;
     } else if (guess < secretNumber ){
       alert('Your guess was too low.');
+      console.log('User guess: ' + guess);
     } else if (guess > secretNumber ) {
       alert('Your guess was too high.');
+      console.log('User guess ' + guess);
     } else if (guess === secretNumber) {
+      console.log('User guess: ' + guess);
       alert('You are correct! You had ' + j + ' guesses remaining.');
       correctAnswer++;
       break;
@@ -76,6 +80,7 @@ myElement.addEventListener('click', function() {
   alert('Try to guess a State I have visited.');
   for (var k = 6; k > 0; k--) {
     userAnswer = prompt('What is your guess? You have ' + k + ' guesses remaining.').toLowerCase();
+    console.log('User guess: ' + userAnswer);
     for (var l = 0; l < places.length; l++) {
       if (userAnswer === places[l])
       {
@@ -109,10 +114,10 @@ myElement.addEventListener('click', function() {
     alert('Three correct is only half right.');
     break;
   case 4:
-    alert('You got over half right. Not bad but not great.');
+    alert('You got over half right: 4 correct. Not bad but not great.');
     break;
   case 5:
-    alert('You got a C average.');
+    alert('You got a C average: 5 out of 7.');
     break;
   case 6:
     alert('You only missed one question!');
@@ -120,7 +125,6 @@ myElement.addEventListener('click', function() {
   case 7:
     alert('You got them all correct! Congratulations!');
     break;
-  default:
-    alert('Should be unreachabe');
   }
+  myElement1.style.display='block';
 });
