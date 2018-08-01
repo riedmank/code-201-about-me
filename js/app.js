@@ -26,7 +26,8 @@ myElement.addEventListener('click', function() {
     }
     check = true;
   }
-  while (check === true) {
+  check = false;
+  while (check === false) {
     answer2 = prompt('Kris\' hometown is Yakima, ND?').toLowerCase();
     if (answer2 === 'yes' || answer2 === 'y' || answer2 === 'no' || answer2 === 'n') {
       console.log('User answer for question 2: ' + answer2);
@@ -40,8 +41,9 @@ myElement.addEventListener('click', function() {
       alert('Please enter one of the following: yes, y, no, n.');
       continue;
     }
-    check = false;
+    check = true;
   }
+  check = false;
   while (check === false) {
     answer3 = prompt('Kris played the trombone in highschool?').toLowerCase();
     if (answer3 === 'yes' || answer3 === 'y' || answer3 === 'no' || answer3 === 'n') {
@@ -58,7 +60,8 @@ myElement.addEventListener('click', function() {
     }
     check = true;
   }
-  while(check === true) {
+  check = false;
+  while(check === false) {
     answer4 = prompt('Was Kris in the Air Force stationed in Minot, ND?').toLowerCase();
     if (answer4 === 'yes' || answer4 === 'y' || answer4 === 'no' || answer4 === 'n') {
       console.log('User answer for question 4: ' + answer4);
@@ -72,8 +75,9 @@ myElement.addEventListener('click', function() {
       alert('Please enter one of the following: yes, y, no, n.');
       continue;
     }
-    check = false;
+    check = true;
   }
+  check = false;
   while(check === false) {
     answer5 = prompt('Does Kris have a pet dog named Max?').toLowerCase();
     if (answer5 === 'yes' || answer5 === 'y' || answer5 === 'no' || answer5 === 'n') {
@@ -90,4 +94,5 @@ myElement.addEventListener('click', function() {
     }
     check = true;
   }
+  check = false;
 });
