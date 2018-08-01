@@ -5,18 +5,19 @@
 // var answer3;
 // var answer4;
 // var answer5;
-var check = false;
 
 var myElement = document.getElementById('myButton');
-
+var check = false;
 var i;
-var answer = new Array[5];
+var answer = [5];
+var userAnswer;
 
 function checker() {
   while (check === false) {
-    answer[i] = prompt('Answer for question ' + (i + 1) + '?').toLowerCase();
-    if (answer[i] === 'yes' || answer[i] === 'y' || answer[i] === 'no' || answer[i] === 'n') {
-      console.log('User answer for question ' + (i + 1) + ':' + answer[i]);
+    userAnswer = prompt('Answer for question ' + (i + 1) + '?').toLowerCase();
+    if (userAnswer === 'yes' || userAnswer === 'y' || userAnswer === 'no' || userAnswer === 'n') {
+      answer.push(userAnswer);
+      console.log('User answer for question ' + (i + 1) + ': ' + userAnswer);
     } else {
       alert('Please enter one of the following: yes, y, no, n.');
       continue;
@@ -30,11 +31,12 @@ function solution() {
 }
 
 myElement.addEventListener('click', function() {
-  for (i = 0; i < answer.length; i++) {
+  //js to change first article needed!!
+  for (i = 0; i < 5; i++) {
     checker();
     check = false;
-    solution();
   }
+  solution();
   // while (check === false) {
   //   answer1 = prompt('Was Kris born in North Dakota?').toLowerCase();
   //   if (answer1 === 'yes' || answer1 === 'y' || answer1 === 'no' || answer1 === 'n') {

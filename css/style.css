@@ -1,16 +1,13 @@
 h1 {
     text-align: center;
     color: ivory;
-    border-color: ivory;
     border: 5px dashed ivory;
-    font-family: 'Arial Black', Gadget, sans-serif;
     border-radius: 10px;
 }
 
 h3 {
     text-align: center;
     color: darkgreen;
-    font-family: 'Arial Black', Gadget, sans-serif;
 }
 
 body {
@@ -20,8 +17,10 @@ body {
 
 article {
     background-color: skyblue;
-    width: 525px;
-    margin-left: 30%;
+    width: 50%;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
 }
 
