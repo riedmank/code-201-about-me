@@ -99,36 +99,36 @@ myElement.addEventListener('click', function() {
     }
   }
 
-  // //switch statement for correct answers
-  // function getResponse() {
-  //   switch (correctAnswer) {
-  //   case 0:
-  //     alert('You didn\'t get any correct! Time to study');
-  //     break;
-  //   case 1:
-  //     alert('You only got one correct. Shameful.');
-  //     break;
-  //   case 2:
-  //     alert('Two correct is marginal.');
-  //     break;
-  //   case 3:
-  //     alert('Three correct is only half right.');
-  //     break;
-  //   case 4:
-  //     alert('You got over half right: 4 correct. Not bad but not great.');
-  //     break;
-  //   case 5:
-  //     alert('You got a C average: 5 out of 7.');
-  //     break;
-  //   case 6:
-  //     alert('You only missed one question!');
-  //     break;
-  //   case 7:
-  //     alert('You got them all correct! Congratulations!');
-  //     break;
-  //   }
-  //   console.log('User answered ' + correctAnswer + ' questions correct.');
-  // }
+  //switch statement for correct answers
+  function getResponse() {
+    switch (correctAnswer) {
+    case 0:
+      alert('You didn\'t get any correct! Time to study');
+      break;
+    case 1:
+      alert('You only got one correct. Shameful.');
+      break;
+    case 2:
+      alert('Two correct is marginal.');
+      break;
+    case 3:
+      alert('Three correct is only half right.');
+      break;
+    case 4:
+      alert('You got over half right: 4 correct. Not bad but not great.');
+      break;
+    case 5:
+      alert('You got a C average: 5 out of 7.');
+      break;
+    case 6:
+      alert('You only missed one question!');
+      break;
+    case 7:
+      alert('You got them all correct! Congratulations!');
+      break;
+    }
+    console.log('User answered ' + correctAnswer + ' questions correct.');
+  }
   guessAboutMe();
   guessNumber();
   guessState();
