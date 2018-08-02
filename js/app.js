@@ -48,8 +48,7 @@ myElement.addEventListener('click', function() {
   alert('Try to guess my favorite number between 1 and 10 in 4 guesses or less!');
   for (var j = 4; j > 0; j--) {
     console.log(secretNumber);
-    guess = prompt('What is your guess? ' + j + ' guesses remaining.');
-    guess = parseInt(guess);
+    guess = parseInt(prompt('What is your guess? ' + j + ' guesses remaining.'));
     if (isNaN(guess) || guess < 1 || guess > 10) {
       alert('You didn\'t enter a correct value. Try again.');
       j++;
@@ -73,18 +72,11 @@ myElement.addEventListener('click', function() {
   }
 
   //State guessing game
-  check = false;
   alert('Try to guess a State I have visited.');
   for (var k = 6; k > 0; k--) {
     userAnswer = prompt('What is your guess? You have ' + k + ' guesses remaining.').toLowerCase();
     console.log('User guess: ' + userAnswer);
-    for (var l = 0; l < places.length; l++) {
-      if (userAnswer === places[l])
-      {
-        check = true;
-      }
-    }
-    if (check) {
+    if (places.includes(userAnswer)) {
       alert('You have correctly guessed a State where I have visited!');
       correctAnswer++;
       break;
