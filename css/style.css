@@ -1,53 +1,55 @@
 h1 {
-    padding: 10px;
-    text-align: center;
-    color: ivory;
-    border: 5px dashed wheat;
-    border-radius: 10px;
-    font-size: 30pt;
+  padding: 10px;
+  text-align: center;
+  color: ivory;
+  border: 5px dashed wheat;
+  border-radius: 10px;
+  font-size: 30pt;
 }
 
 h3 {
-    padding-bottom: 25px;
-    text-align: center;
-    color: darkgreen;
+  padding-bottom: 25px;
+  text-align: center;
+  color: darkgreen;
 }
 
 h3 span {
-    font-size: 10pt;
+  font-size: 10pt;
 }
 
 body {
-    background-color:darkblue;
-    font-family: 'Arial Black', Gadget, sans-serif;
+  background-color: darkblue;
+  background: url("../img/ocean_wave.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 
 article {
-    margin: 10px;
-    padding: 20px;
-    background-color: skyblue;
-    width: 50%;
-    min-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  background-color: skyblue;
+  width: 50%;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 
 ol {
-    color: skyblue;
+  color: skyblue;
 }
 
 ol:hover {
-    color: darkgreen;
+  color: darkgreen;
 }
 
 ul {
-    color: darkgreen;
-    list-style-type: none;
-    border-bottom: 20px;
+  color: darkgreen;
+  list-style-type: none;
+  border-bottom: 20px;
 }
 
 p {
-    text-align: center;
-    color: darkgreen;
+  text-align: center;
+  color: darkgreen;
 }
