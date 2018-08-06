@@ -14,9 +14,7 @@ function guessAboutMe() {
   var answer = ['y', 'n', 'n', 'y', 'n'];
   for (var i = 0; i < 5; i++) { //doesn't use length property because of push function
     while (check === false) {
-      userAnswer = prompt(
-        'Answer for question ' + (i + 1) + '?'
-      ).toLowerCase();
+      userAnswer = prompt('Answer for question ' + (i + 1) + '?').toLowerCase();
       if (userAnswer === 'yes' || userAnswer === 'y' || userAnswer === 'no' || userAnswer === 'n') {
         console.log('User answer for question ' + (i + 1) + ': ' + userAnswer);
         check = true;
@@ -72,9 +70,7 @@ function guessState() {
   var places = ['washington', 'north dakota', 'california', 'florida'];
   alert('Try to guess a State I have visited.');
   for (var i = 6; i > 0; i--) {
-    userAnswer = prompt(
-      'What is your guess? You have ' + i + ' guesses remaining.'
-    ).toLowerCase();
+    userAnswer = prompt('What is your guess? You have ' + i + ' guesses remaining.').toLowerCase();
     console.log('User guess: ' + userAnswer);
     if (places.includes(userAnswer)) {
       alert('You have correctly guessed a State where I have visited!');
@@ -115,7 +111,6 @@ function getResponse() {
     break;
   case 7:
     alert('You got them all correct! Congratulations!');
-    break;
   }
   console.log('User answered ' + correctAnswer + ' questions correct.');
 }
